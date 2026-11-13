@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephanie Nicole G. Gagarin | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Stephanie Nicole G. Gagarin</h1>
+        <p>BS Information Technology | 1st Year - Block D</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Java Project</a>
+    </nav>
+
+    <main>
+
+        <section id="about">
+            <h2>Personal Information</h2>
+            <p><strong>Full Name:</strong> Stephanie Nicole G. Gagarin</p>
+            <p><strong>Course:</strong> Bachelor of Science in Information Technology</p>
+            <p><strong>Year & Section:</strong> 1st Year, Block D</p>
+
+            <h3>Short Introduction</h3>
+            <p>
+                Hello! My name is Stephanie Nicole G. Gagarin.
+                I am a first-year Bachelor of Science in Information
+                Technology student at Our Lady of the Sacred Heart
+                College of Guimba. I am a motivated student who is
+                willing to learn new things, improve my knowledge,
+                and develop my skills in technology. During my free
+                time, I enjoy watching Korean dramas and playing
+                games. My goal is to become a skilled IT professional
+                and gain more experience in programming and web development.
+            </p>
+
+            <h3>Hobbies and Interests</h3>
+            <ul>
+                <li>Watching Korean dramas</li>
+                <li>Playing games</li>
+                <li>Learning new things about technology</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Educational Background</h2>
+            <ul>
+                <li><strong>Elementary:</strong> Guimba West Central School</li>
+                <li><strong>Junior High School:</strong> Bartolome Sangalang National High School</li>
+                <li><strong>Senior High School:</strong> Guimba Senior High School</li>
+                <li><strong>College:</strong> Our Lady of the Sacred Heart College of Guimba (OLSCHO)</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills and Learning Areas</h2>
+            <ul>
+                <li>Willingness to learn new technologies</li>
+                <li>Basic programming concepts</li>
+                <li>Learning HTML and CSS</li>
+                <li>Problem-solving and logical thinking</li>
+                <li>Basic computer skills</li>
+            </ul>
+        </section>
+
+        <section id="project">
+            <h2>Java Programming Project</h2>
+            <h3>Number Guessing Game</h3>
+            <p>
+                This is my Java console-based Number Guessing Game.
+                The computer generates a secret number from 1 to 20.
+                The player tries to guess the correct number.
+                The program gives hints if the guess is too high or too low.
+            </p>
+
+            <h3>Java Source Code</h3>
+            <pre><code>
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        Random random = new Random();
+
+        int secretNumber = random.nextInt(20) + 1;
+        int guess;
+        int attempts = 0;
+
+        System.out.println("NUMBER GUESSING GAME");
+        System.out.println("Guess a number from 1 to 20!");
+
+        do {
+            System.out.print("Enter your guess: ");
+            guess = input.nextInt();
+            attempts++;
+
+            if (guess < secretNumber) {
+                System.out.println("Too low! Try again.");
+            } else if (guess > secretNumber) {
+                System.out.println("Too high! Try again.");
+            } else {
+                System.out.println("Congratulations!");
+                System.out.println("Secret number: " + secretNumber);
+                System.out.println("Attempts: " + attempts);
+            }
+
+        } while (guess != secretNumber);
+
+        System.out.println("Thank you for playing!");
+        input.close();
+    }
+}
+            </code></pre>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Stephanie Nicole G. Gagarin | Personal Portfolio</p>
+    </footer>
+
+</body>
+                                   </html>
+                                   
